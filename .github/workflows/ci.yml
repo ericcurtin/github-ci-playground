@@ -11,5 +11,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run a one-line script
-        run: git clone https://gitlab.com/CentOS/automotive/sample-images.git && sudo sample-images/auto-image-builder.sh cs9-qemu-minimal-ostree.x86_64.qcow2
+        run: git clone https://gitlab.com/CentOS/automotive/src/automotive-image-builder.git && cd automotive-image-builder && ./automotive-image-builder --container build tests/test.mpp.yml --export qcow2 osbuild.json
 
