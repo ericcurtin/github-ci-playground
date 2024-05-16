@@ -2,7 +2,7 @@
 
 set -ex
 
-curl -OL https://gitlab.com/CentOS/automotive/sample-images/-/archive/main/sample-images-main.zip
+curl -OL https://gitlab.com/CentOS/automotive/sample-images/-/archive/main/sample-images-main.tar.gz
 tar xvf sample-images-main.zip
 ls -ltr sample-images/
 sample-images/automotive-image-builder/automotive-image-builder \
